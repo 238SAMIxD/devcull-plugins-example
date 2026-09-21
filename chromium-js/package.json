@@ -1,0 +1,6 @@
+{
+  "name": "chromium-js",
+  "version": "1.0.0",
+  "description": "Chromium cleaner plugin for devcull",
+  "type": "module"
+}

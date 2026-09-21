@@ -1,0 +1,5 @@
+{
+  "name": "Chromium",
+  "category": "Browser",
+  "entrypoint": ["node", "cleaner.js"]
+}

@@ -13,6 +13,7 @@ Each folder in this repository acts as a placeholder (for now) and will contain 
 *   **[Safari](safari-swift/)**: Swift
 *   **[Edge](edge-ruby/)**: Ruby
 *   **[Comet](comet-rust/)**: Rust
+*   **[Chromium](chromium-js/)**: JavaScript / Node.js
 
 ## The Plugin Protocol (How it works)
 
