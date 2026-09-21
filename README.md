@@ -10,7 +10,7 @@ Each folder in this repository acts as a placeholder (for now) and will contain 
 *   **[Firefox](firefox-py/)**: Python
 *   **[Opera](opera-csharp/)**: C# / .NET
 *   **[Brave](brave-go/)**: Go
-*   **[Safari](safari-bash/)**: Bash
+*   **[Safari](safari-swift/)**: Swift
 
 ## The Plugin Protocol (How it works)
 
