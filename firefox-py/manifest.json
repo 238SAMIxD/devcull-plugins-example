@@ -1,0 +1,5 @@
+{
+  "name": "Mozilla Firefox",
+  "category": "Browsers",
+  "entrypoint": ["python3", "cleaner.py"]
+}
