@@ -1,0 +1,5 @@
+{
+  "name": "DuckDuckGo",
+  "category": "Browser",
+  "entrypoint": ["java", "Cleaner.java"]
+}

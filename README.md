@@ -15,6 +15,7 @@ Each folder in this repository acts as a placeholder (for now) and will contain 
 *   **[Comet](comet-rust/)**: Rust
 *   **[Chromium](chromium-js/)**: JavaScript / Node.js
 *   **[Arc](arc-cpp/)**: C++
+*   **[DuckDuckGo](duckduckgo-java/)**: Java
 
 ## The Plugin Protocol (How it works)
 
