@@ -1,5 +1,5 @@
 {
   "name": "Google Chrome",
   "category": "Browser",
-  "entrypoint": ["node", "index.js"]
+  "entrypoint": ["node", "dist/index.js"]
 }

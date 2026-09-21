@@ -37,7 +37,8 @@ web_modules/
 # Build and package outputs
 *.tsbuildinfo
 *.tgz
-dist
+dist/*
+!dist/index.js
 .eslintcache
 .cache
 .parcel-cache

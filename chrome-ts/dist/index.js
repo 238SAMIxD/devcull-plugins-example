@@ -69,7 +69,6 @@ async function getDirSize(dirPath) {
         }
     }
     catch (e) {
-        // Ignore files or directories we can't access
     }
     return totalSize;
 }
