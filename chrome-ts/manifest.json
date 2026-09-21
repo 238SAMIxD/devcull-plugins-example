@@ -1,5 +1,5 @@
 {
   "name": "Google Chrome",
-  "category": "Browsers",
+  "category": "Browser",
   "entrypoint": ["node", "index.js"]
 }

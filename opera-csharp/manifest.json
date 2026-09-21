@@ -1,5 +1,5 @@
 {
   "name": "Opera",
-  "category": "Browsers",
+  "category": "Browser",
   "entrypoint": ["dotnet", "run", "--verbosity", "quiet", "--"]
 }

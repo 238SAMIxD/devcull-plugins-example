@@ -1,5 +1,5 @@
 {
   "name": "Microsoft Edge",
-  "category": "Browsers",
+  "category": "Browser",
   "entrypoint": ["ruby", "cleaner.rb"]
 }

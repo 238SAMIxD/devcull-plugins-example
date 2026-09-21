@@ -1,5 +1,5 @@
 {
   "name": "Comet",
-  "category": "Browsers",
+  "category": "Browser",
   "entrypoint": ["cargo", "run", "--quiet", "--"]
 }

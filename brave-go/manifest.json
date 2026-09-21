@@ -1,5 +1,5 @@
 {
   "name": "Brave",
-  "category": "Browsers",
+  "category": "Browser",
   "entrypoint": ["go", "run", "main.go"]
 }
