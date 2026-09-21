@@ -25,7 +25,6 @@ def estimate_size(path):
                 if p.is_file() and not p.is_symlink():
                     total += p.stat().st_size
             except Exception:
-                # Ignore files we can't access
                 pass
     return total
 

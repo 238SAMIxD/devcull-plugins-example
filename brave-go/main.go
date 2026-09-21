@@ -62,7 +62,7 @@ func estimateSize(path string) (int64, error) {
 
 	err = filepath.WalkDir(path, func(p string, d fs.DirEntry, err error) error {
 		if err != nil {
-			return nil // ignore files we cannot access
+			return nil
 		}
 		if !d.IsDir() {
 			info, err := d.Info()

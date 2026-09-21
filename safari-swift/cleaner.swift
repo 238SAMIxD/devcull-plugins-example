@@ -45,7 +45,6 @@ func estimateSize(at url: URL) throws -> Int {
                 totalSize += fileSize
             }
         } catch {
-            // Ignore files we can't access
         }
     }
     

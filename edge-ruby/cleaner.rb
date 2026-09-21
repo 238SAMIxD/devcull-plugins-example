@@ -24,7 +24,6 @@ def estimate_size(path)
       begin
         total += File.size(f) if File.file?(f)
       rescue StandardError
-        # Ignore files we cannot access
       end
     end
   end

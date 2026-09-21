@@ -88,13 +88,11 @@ static long EstimateSize(string path)
             }
             catch (Exception)
             {
-                // Ignore files we cannot access
             }
         }
     }
     catch (Exception)
     {
-        // Ignore directory access errors
     }
 
     return totalSize;

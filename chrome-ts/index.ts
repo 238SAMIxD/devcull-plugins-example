@@ -33,7 +33,6 @@ async function getDirSize(dirPath: string): Promise<number> {
             }
         }
     } catch (e) {
-        // Ignore files or directories we can't access
     }
     return totalSize;
 }
