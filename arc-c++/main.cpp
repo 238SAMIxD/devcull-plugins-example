@@ -75,7 +75,7 @@ int main(int argc, char* argv[]) {
             std::cout << "{\"installed\": " << (installed ? "true" : "false") << "}\n";
         } else if (command == "estimate") {
             uintmax_t size = estimate_size(cache_path);
-            std::cout << "{\"reclaimed_bytes\": " << size << ", \"error\": \"\"}\n";
+            std::cout << "{\"reclaimable_bytes\": " << size << ", \"error\": \"\"}\n";
         } else if (command == "clean") {
             uintmax_t size = estimate_size(cache_path);
             if (fs::exists(cache_path)) {

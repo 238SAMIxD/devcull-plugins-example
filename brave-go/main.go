@@ -14,6 +14,11 @@ type Response struct {
 	Error          string `json:"error"`
 }
 
+type EstimateResponse struct {
+	ReclaimableBytes int64  `json:"reclaimable_bytes"`
+	Error            string `json:"error"`
+}
+
 type InstalledResponse struct {
 	Installed bool `json:"installed"`
 }
@@ -99,9 +104,9 @@ func main() {
 	case "estimate":
 		size, err := estimateSize(cachePath)
 		if err != nil {
-			printResponse(Response{ReclaimedBytes: 0, Error: err.Error()})
+			printResponse(EstimateResponse{ReclaimableBytes: 0, Error: err.Error()})
 		} else {
-			printResponse(Response{ReclaimedBytes: size, Error: ""})
+			printResponse(EstimateResponse{ReclaimableBytes: size, Error: ""})
 		}
 
 	case "clean":

@@ -75,8 +75,8 @@ async function main() {
             const installed = await checkInstalled(cachePaths);
             console.log(JSON.stringify({ installed }));
         } else if (command === 'estimate') {
-            const reclaimed_bytes = await estimateSize(cachePaths);
-            console.log(JSON.stringify({ reclaimed_bytes, error: "" }));
+            const reclaimable_bytes = await estimateSize(cachePaths);
+            console.log(JSON.stringify({ reclaimable_bytes, error: "" }));
         } else if (command === 'clean') {
             const reclaimed_bytes = await cleanCaches(cachePaths);
             console.log(JSON.stringify({ reclaimed_bytes, error: "" }));

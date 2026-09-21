@@ -50,9 +50,9 @@ def main():
         elif command == "estimate":
             if cache_path:
                 reclaimed = estimate_size(cache_path)
-                print(json.dumps({"reclaimed_bytes": reclaimed, "error": ""}))
+                print(json.dumps({"reclaimable_bytes": reclaimed, "error": ""}))
             else:
-                print(json.dumps({"reclaimed_bytes": 0, "error": ""}))
+                print(json.dumps({"reclaimable_bytes": 0, "error": ""}))
                 
         elif command == "clean":
             if cache_path:

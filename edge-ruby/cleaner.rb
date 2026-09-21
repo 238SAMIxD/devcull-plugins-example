@@ -50,7 +50,7 @@ begin
     puts JSON.generate({ installed: installed })
   when "estimate"
     size = estimate_size(cache_path)
-    puts JSON.generate({ reclaimed_bytes: size, error: "" })
+    puts JSON.generate({ reclaimable_bytes: size, error: "" })
   when "clean"
     size = estimate_size(cache_path)
     FileUtils.rm_rf(cache_path) if Dir.exist?(cache_path)

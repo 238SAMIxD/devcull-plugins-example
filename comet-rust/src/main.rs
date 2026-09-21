@@ -10,11 +10,21 @@ struct Response {
 }
 
 #[derive(Serialize)]
+struct EstimateResponse {
+    reclaimable_bytes: u64,
+    error: String,
+}
+
+#[derive(Serialize)]
 struct InstalledResponse {
     installed: bool,
 }
 
 fn print_response(res: &Response) {
+    println!("{}", serde_json::to_string(res).unwrap());
+}
+
+fn print_estimate_response(res: &EstimateResponse) {
     println!("{}", serde_json::to_string(res).unwrap());
 }
 
@@ -108,21 +118,21 @@ fn main() {
         if cache_path.exists() {
             match get_dir_size(&cache_path) {
                 Ok(size) => {
-                    print_response(&Response {
-                        reclaimed_bytes: size,
+                    print_estimate_response(&EstimateResponse {
+                        reclaimable_bytes: size,
                         error: String::new(),
                     });
                 }
                 Err(e) => {
-                    print_response(&Response {
-                        reclaimed_bytes: 0,
+                    print_estimate_response(&EstimateResponse {
+                        reclaimable_bytes: 0,
                         error: e.to_string(),
                     });
                 }
             }
         } else {
-            print_response(&Response {
-                reclaimed_bytes: 0,
+            print_estimate_response(&EstimateResponse {
+                reclaimable_bytes: 0,
                 error: String::new(),
             });
         }

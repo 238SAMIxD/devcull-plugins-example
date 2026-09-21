@@ -3,6 +3,7 @@ import Foundation
 struct PluginResponse: Codable {
     var installed: Bool?
     var reclaimed_bytes: Int?
+    var reclaimable_bytes: Int?
     var error: String?
 }
 
@@ -70,7 +71,7 @@ func main() {
             
         case "estimate":
             let size = try estimateSize(at: cachePath)
-            printResponse(PluginResponse(installed: nil, reclaimed_bytes: size, error: ""))
+            printResponse(PluginResponse(installed: nil, reclaimed_bytes: nil, reclaimable_bytes: size, error: ""))
             
         case "clean":
             let size = try estimateSize(at: cachePath)

@@ -24,7 +24,7 @@ public class Cleaner {
                 System.out.println("{\"installed\": " + installed + "}");
             } else if ("estimate".equals(command)) {
                 long size = estimateSize(cachePath);
-                System.out.println("{\"reclaimed_bytes\": " + size + ", \"error\": \"\"}");
+                System.out.println("{\"reclaimable_bytes\": " + size + ", \"error\": \"\"}");
             } else if ("clean".equals(command)) {
                 long size = estimateSize(cachePath);
                 if (Files.exists(cachePath)) {

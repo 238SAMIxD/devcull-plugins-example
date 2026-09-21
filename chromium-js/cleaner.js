@@ -49,10 +49,10 @@ async function main() {
             console.log(JSON.stringify({ installed }));
         } else if (command === 'estimate') {
             if (fs.existsSync(cachePath)) {
-                const reclaimed_bytes = await getDirSize(cachePath);
-                console.log(JSON.stringify({ reclaimed_bytes, error: "" }));
+                const reclaimable_bytes = await getDirSize(cachePath);
+                console.log(JSON.stringify({ reclaimable_bytes, error: "" }));
             } else {
-                console.log(JSON.stringify({ reclaimed_bytes: 0, error: "" }));
+                console.log(JSON.stringify({ reclaimable_bytes: 0, error: "" }));
             }
         } else if (command === 'clean') {
             if (fs.existsSync(cachePath)) {

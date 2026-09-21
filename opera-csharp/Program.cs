@@ -28,7 +28,7 @@ try
     else if (command == "estimate")
     {
         long size = EstimateSize(cachePath);
-        Console.WriteLine(JsonSerializer.Serialize(new Response(size, "")));
+        Console.WriteLine(JsonSerializer.Serialize(new EstimateResponse(size, "")));
     }
     else if (command == "clean")
     {
@@ -99,4 +99,5 @@ static long EstimateSize(string path)
 }
 
 public record Response(long reclaimed_bytes, string error);
+public record EstimateResponse(long reclaimable_bytes, string error);
 public record InstalledResponse(bool installed);
