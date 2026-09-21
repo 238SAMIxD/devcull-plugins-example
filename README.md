@@ -14,6 +14,7 @@ Each folder in this repository acts as a placeholder (for now) and will contain 
 *   **[Edge](edge-ruby/)**: Ruby
 *   **[Comet](comet-rust/)**: Rust
 *   **[Chromium](chromium-js/)**: JavaScript / Node.js
+*   **[Arc](arc-cpp/)**: C++
 
 ## The Plugin Protocol (How it works)
 

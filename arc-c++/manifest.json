@@ -1,0 +1,5 @@
+{
+  "name": "Arc",
+  "category": "Browser",
+  "entrypoint": ["./arc-cleaner"]
+}
