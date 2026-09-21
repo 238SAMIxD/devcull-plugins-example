@@ -1,0 +1,5 @@
+{
+  "name": "Comet",
+  "category": "Browsers",
+  "entrypoint": ["cargo", "run", "--quiet", "--"]
+}

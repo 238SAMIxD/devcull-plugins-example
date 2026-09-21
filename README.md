@@ -12,6 +12,7 @@ Each folder in this repository acts as a placeholder (for now) and will contain 
 *   **[Brave](brave-go/)**: Go
 *   **[Safari](safari-swift/)**: Swift
 *   **[Edge](edge-ruby/)**: Ruby
+*   **[Comet](comet-rust/)**: Rust
 
 ## The Plugin Protocol (How it works)
 
