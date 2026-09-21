@@ -11,6 +11,7 @@ Each folder in this repository acts as a placeholder (for now) and will contain 
 *   **[Opera](opera-csharp/)**: C# / .NET
 *   **[Brave](brave-go/)**: Go
 *   **[Safari](safari-swift/)**: Swift
+*   **[Edge](edge-ruby/)**: Ruby
 
 ## The Plugin Protocol (How it works)
 
